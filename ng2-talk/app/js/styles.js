@@ -15,6 +15,10 @@ export const styles = StyleSheet.create({
   subHeader: {
     fontSize: '1.1em',
     fontWeight: '400',
-    margin: '0 0 0.5em'
+    margin: '0 0 0.75em'
+  },
+
+  monospace: {
+    fontFamily: 'SF Mono'
   }
 })

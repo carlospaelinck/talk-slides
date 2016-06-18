@@ -29,7 +29,7 @@ module.exports = {
   entry: {
     app: [ './app/js/app.js' ],
     vendor: [
-      'react', 'react-dom', 'spectacle', 'aphrodite'
+      'react', 'react-dom', 'spectacle', 'aphrodite', 'prismjs'
     ]
   },
 
