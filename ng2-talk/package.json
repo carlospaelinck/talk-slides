@@ -16,7 +16,8 @@
     "prismjs": "^1.5.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
-    "spectacle": "^1.0.7"
+    "spectacle": "^1.0.7",
+    "spectacle-code-slide": "git://github.com/fanderzon/spectacle-code-slide.git#this-props-route-fix"
   },
   "devDependencies": {
     "babel-core": "^6.6.0",
