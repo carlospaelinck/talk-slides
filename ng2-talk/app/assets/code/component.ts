@@ -10,7 +10,9 @@ export class MainViewComponent {
   title: string = "Main View"
   posts: Array<string> = []
 
-  constructor(private postService: PostService) {
+  constructor(
+    private postService: PostService
+  ) {
     this.postService.getPosts()
       .then(posts => this.posts = posts)
   }

@@ -1,0 +1,17 @@
+<div>{{ name }}</div>
+
+<button (click)="downloadData()">
+  Download
+</button>
+
+<ul>
+  <li *ngFor="let post of posts">
+    {{ post.name }}
+  </li>
+</ul>
+
+<div *ngIf="shouldShow()"> ... </div>
+
+<user-info [user]="user"></user-info>
+
+<input [(ngModel)]="username">

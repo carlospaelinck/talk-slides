@@ -12,21 +12,27 @@ code[class*="language-"] {
 
   code {
     font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
-    font-size: 1em;
+    font-size: 0.95em;
   }
 }
 
 .spectacle-content {
   max-width: 90% !important;
 
+  pre {
+    padding: 20% 0 0 0 !important;
+  }
+
   h1 {
     width: 100%;
     border: none !important;
-    border-bottom: 5px solid #607d8b !important;
     text-transform: none !important;
     font-weight: 400 !important;
     font-size: 1.5em !important;
     white-space: normal !important;
-    top: -80px !important;
+    top: -60px !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
   }
 }
