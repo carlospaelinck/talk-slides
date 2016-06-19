@@ -10,7 +10,7 @@
     </a>
   `
 })
-export class PhotosView {
+export class PhotosCollectionView {
   photoUuid: string = 'abc-123-xyz'
 
   constructor(

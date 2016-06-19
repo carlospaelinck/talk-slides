@@ -18,11 +18,31 @@ export const styles = StyleSheet.create({
   },
 
   monospace: {
-    fontFamily: 'SF Mono'
+    fontFamily: 'SF Mono',
+    fontSize: '1.25em'
   },
 
   content: {
     fontSize: '2em',
     fontWeight: '400',
+  },
+
+  small: {
+    fontSize: '1.35em'
+  },
+
+  margin: {
+    margin: '0 0 0.5em'
+  },
+
+  list: {
+    listStylePosition: 'outside'
+  },
+
+  demo: {
+    width: '90%',
+    height: '500px',
+    margin: '1em 0 0',
+    border: 'none'
   }
 })

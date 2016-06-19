@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Spectacle, Deck, Slide, Heading, Image, Appear, CodePane } from 'spectacle'
+import { Spectacle, Deck, Slide, Heading, Image, Appear, ListItem, List } from 'spectacle'
 import CodeSlide from '../assets/vendor/spectacle-code-slide'
 import createTheme from 'spectacle/lib/themes/default'
 import { css } from 'aphrodite'
@@ -36,6 +36,18 @@ export const Presentation = () => (
           <Image
             src={ require('../assets/images/angular.svg') }
             width={ 500 } />
+        </Slide>
+        <Slide>
+          <div className={ css(styles.header) }>
+            What we’re going to cover…
+          </div>
+          <List className={ css(styles.list) }>
+           <Appear><ListItem>How Components are built and work</ListItem></Appear>
+           <Appear><ListItem>Component templates and different bindings</ListItem></Appear>
+           <Appear><ListItem>What are Observables and how they work</ListItem></Appear>
+           <Appear><ListItem>Services and API requests using Observables</ListItem></Appear>
+           <Appear><ListItem>ngRx Router—reactive routing based on Observables</ListItem></Appear>
+         </List>
         </Slide>
         <Slide>
           <div className={ css(styles.header) }>
@@ -168,7 +180,7 @@ export const Presentation = () => (
           code={ require('raw!../assets/code/routes.ts') }
           ranges={[
             { loc: [0, 0] },
-            { loc: [0, 1], title: 'Routes are a typed array that contains maps imported components to paths.' },
+            { loc: [0, 1], title: 'Routes are a typed array that maps imported components to paths.' },
             { loc: [1, 5], title: 'Route configurations consist of a path and component.' },
             { loc: [5, 9], title: 'Routes can be protected with guards.' },
             { loc: [7, 8], title: 'A guard is a hook that determines if the router can transition to the route.' },
@@ -184,10 +196,10 @@ export const Presentation = () => (
           lang="typescript"
           code={ require('raw!../assets/code/route-params.ts') }
           ranges={[
-            { loc: [0, 3], title: 'Accessing a route parameter.' },
+            { loc: [0, 3], title: 'Accessing a route parameter in a component.' },
             { loc: [4, 6], title: 'Route parameters are typed observables.' },
             { loc: [10, 11], title: '‘RouteParams’ are injected into the class constructor.' },
-            { loc: [13, 15], title: 'The parameter is plucked from the `routeParams` object and must be coerced to the destination type.' },
+            { loc: [13, 15], title: 'The parameter is plucked from the ‘routeParams’ object and must be coerced to the destination type.' },
             { loc: [13, 15], title: 'Since route paramters are observables, the component is not rerendered when the paramter changes.' },
             { loc: [19, 25], title: 'The component is expected to be reactive to the new parameter stream emitted by the observable.' }
           ]} />
@@ -221,6 +233,20 @@ export const Presentation = () => (
         <Slide>
           <div className={ css(styles.header) }>
             Demo
+          </div>
+        </Slide>
+        <Slide>
+          <div className={ css(styles.header, styles.margin) }>
+            Questions
+          </div>
+          <div className={ css(styles.content, styles.small, styles.margin) }>
+            @carlos_paelinck
+          </div>
+          <div className={ css(styles.content, styles.small) }>
+            github.com/carlospaelinck/Angular2-Demo
+          </div>
+          <div className={ css(styles.content, styles.small) }>
+            github.com/carlospaelinck/talk-slides/ng2-talk
           </div>
         </Slide>
       </Deck>
